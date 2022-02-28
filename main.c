@@ -60,10 +60,10 @@ int main(){
     	bln = 0;
     	thn = 0;
     	
-    	printf("[#] Masukkan nama orang ke-%d          : ", inc+1);
+    	printf("[#] Masukkan nama orang ke-%d    : ", inc+1);
     	scanf(" %[^\n]s", nama);
     	
-    	printf("[#] Masukkan tanggal lahir orang ke-%d : [hh/bb/yy] ", inc+1);
+    	printf("[#] Masukkan tgl lhr orang ke-%d : [hh/bb/yy] ", inc+1);
     	scanf(" %d/%d/%d", &tgl, &bln, &thn);
     	
     	printf("\n");
