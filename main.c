@@ -48,22 +48,23 @@ int main(){
 	printf("[#] Berapa banyak data? ");
 	scanf("%d", &dat);
 	
-	// Bersihkan layar konsol cmd
-	system("cls||clear");
-	
     data_orang *person[dat];
     
-    printf("== [ Input ] ==\n\n");
-    
     for(inc = 0; inc < dat; inc++){
+    	
     	tgl = 0;
     	bln = 0;
     	thn = 0;
     	
-    	printf("[#] Masukkan nama orang ke-%d    : ", inc+1);
+    	// Bersihkan layar konsol cmd
+	    system("cls||clear");
+    	
+    	printf("== [ Input data ke-%d ] ==\n\n", inc+1);
+    	
+    	printf("[#] Masukkan Nama Orang        : ");
     	scanf(" %[^\n]s", nama);
     	
-    	printf("[#] Masukkan tgl lhr orang ke-%d : [hh/bb/yy] ", inc+1);
+    	printf("[#] Masukkan Tanggal Lahir-nya : [hh/bb/yy] ");
     	scanf(" %d/%d/%d", &tgl, &bln, &thn);
     	
     	printf("\n");
