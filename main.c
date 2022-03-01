@@ -48,6 +48,13 @@ int main(){
 	printf("[#] Berapa banyak data? ");
 	scanf("%d", &dat);
 	
+	if(dat < 1){
+	    // Bersihkan layar konsol cmd
+	    system("cls||clear");
+	    printf("[!] Tidak boleh input 0,\n  > Kalau 0 mending tidur aja..\n  > gausah run program!");
+	    exit(1);
+	}
+	
     data_orang *person[dat];
     
     for(inc = 0; inc < dat; inc++){
